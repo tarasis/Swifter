@@ -1,6 +1,6 @@
 //
-//  AppDelegate.swift
-//  SwifterDemoiOS
+//  Swifter.h
+//  Swifter
 //
 //  Copyright (c) 2014 Matt Donnelly.
 //
@@ -23,18 +23,9 @@
 //  THE SOFTWARE.
 //
 
-import UIKit
-import SwifteriOS
+#import <UIKit/UIKit.h>
+#import "Swifter-Swift.h"
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-                            
-    var window: UIWindow?
+FOUNDATION_EXPORT double SwifterVersionNumber;
 
-    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-        Swifter.handleOpenURL(url)
-        return true
-    }
-    
-}
-
+FOUNDATION_EXPORT const unsigned char SwifterVersionString[];
